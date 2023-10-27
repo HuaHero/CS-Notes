@@ -151,11 +151,12 @@ public static void main(String[] args) {
 
 Executor 管理多个异步任务的执行，而无需程序员显式地管理线程的生命周期。这里的异步是指多个任务的执行互不干扰，不需要进行同步操作。
 
-主要有三种 Executor：
+主要有三种 Executors：
 
 - CachedThreadPool：一个任务创建一个线程；
 - FixedThreadPool：所有任务只能使用固定大小的线程；
 - SingleThreadExecutor：相当于大小为 1 的 FixedThreadPool。
+- ScheduledExecutorService: 任务可以在指定时延后运行或定期运行？。
 
 ```java
 public static void main(String[] args) {
