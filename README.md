@@ -37,6 +37,7 @@
 - [计算机网络](./notes/计算机网络%20-%20目录.md)
 - [HTTP](./notes/HTTP.md)
 - [Socket](./notes/Socket.md)
+- [WebSocket](./notes/WebSocket.md)
 
 ## :floppy_disk: 数据库
 
