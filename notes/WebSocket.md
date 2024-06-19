@@ -50,7 +50,7 @@ Sec-WebSocket-Location:与Host字段对应，表示请求WebSocket协议的地�
 HTTP/1.1 101 Switching Protocols:101状态码表示升级协议，在返回101状态码后，HTTP协议完成工作，转换为WebSocket协议。此时就可以进行全双工双向通信了。
 以上为注册标准格式，后面注册成功后，可以只发具体的Lapi协议。
 
-#5. 个人认为核心知识点&HTTP或TCP等：
+# 5. 个人认为核心知识点&HTTP或TCP等：
  1. 连接建立过程
  2. 连接释放过程
  3. 连接生命周期
