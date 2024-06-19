@@ -55,7 +55,9 @@ HTTP/1.1 101 Switching Protocols:101状态码表示升级协议，在返回101�
  2. 连接释放过程：若服务端不支持的自定义协议或掩码错误、或操作码中为close
  3. 连接生命周期:连接建立后就是持久性连接。对于需要区分空间连接或忙碌状态，有**操作码**close、ping、pong这几种控制码；
 
-WebSocket协议的通信报文是二进制格式，大致包含以下字段：
+WebSocket协议的通信报文是**二进制格式**，大致包含以下字段：
+![image](https://github.com/HuaHero/CS-Notes/assets/2776844/c7e73f02-d719-4be4-9021-4d85cbbdc1c2)
+
 （1）FIN: 占用一个bit位。如果其值是1（抓包工具显示为true），表示该帧这是消息的
 最后一个数据帧；如果其值是0（抓包显示为false），表示该帧不是消息的最后一个数据帧。
 （2）opcode：WebSocket帧的操作码，占用4个bit位。操作码opcode的值决定了应该如何解析后续的数据载荷(Data Payload)。如果操作代码是不认识的，那么接收端应该断开链接。
